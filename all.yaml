@@ -25,7 +25,7 @@ spec:
         app: demo-app
     spec:
       containers:
-      - image: ghcr.io/gongzitao/demo-app:cb56ce962b009b97acce784bc2b1348c581ad019
+      - image: ghcr.io/gongzitao/demo-app:1d682b687b67eddc6bc3604be80236d375484c8e
         name: demo-app
         ports:
         - containerPort: 8080
