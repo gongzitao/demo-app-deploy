@@ -5,5 +5,5 @@ resources:
 - ../../base
 
 images:
-- name: ghcr.io/gongzier/demo-app
+- name: ghcr.io/gongzitao/demo-app
   newTag: latest
