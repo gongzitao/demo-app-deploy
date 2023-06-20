@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-app
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: demo-app
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-app
+  template:
+    metadata:
+      labels:
+        app: demo-app
+    spec:
+      containers:
+      - image: ghcr.io/gongzitao/demo-app:8c8f1758c23845be286b2c22a0337f03b8e21c16
+        name: demo-app
+        ports:
+        - containerPort: 8080
