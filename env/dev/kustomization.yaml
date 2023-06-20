@@ -6,4 +6,4 @@ resources:
 
 images:
 - name: ghcr.io/gongzitao/demo-app
-  newTag: latest
+  newTag: dea75dd98671d003bcd544f7483a7145db8d0318
